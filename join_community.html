@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Community Page</title>
+  <!-- Font Awesome CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* Add custom styles here */
+    body {
+      background-color: #25B396;
+    }
+
+    .back-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #000;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.back-button:hover {
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.4)); /* Apply shadow effect to the icon on hover */
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.6rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add shadow to the heading text */
+    
+}
+h2 {
+    text-align: center;
+    font-size: 1.3rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add shadow to the heading text */
+    }
+
+    .container-fluid {
+      text-align: center; /* Center align contents horizontally */
+    }
+    .image-container {
+      height: calc(100vh - 100px); /* Calculate remaining height of viewport after subtracting the height of the heading */
+      display: inline-flex;
+      justify-content: center;
+      align-items: center; /* Vertically center align the contents */
+      flex-wrap: wrap;
+    }
+    .volunteer-image {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    padding-top: 30px;
+      width: 30%;
+      cursor: pointer; /* Add cursor pointer to indicate clickable */
+      transition: transform 0.3s; /* Add transition for smooth effect */
+    }
+    .volunteer-image:hover {
+      transform: scale(1.1); /* Scale up on hover */
+    }
+    .volunteer-image img {
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+  object-fit: contain;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Add shadow effect */
+  transition: box-shadow 0.3s; /* Add transition for shadow effect */
+}
+    .volunteer-image:hover img {
+      box-shadow: 0 8px 10px rgba(0, 0, 0, 0.6); /* Increase shadow size on hover */
+    }
+    .volunteer-image p {
+      /* Add the following properties */
+      margin: 10px 0 0;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>The best way to find yourself is to lose yourself in the service of others.</h1>
+  <!-- Add content for joining existing communities here -->
+  <button class="back-button" onclick="goBack()"><i class="fas fa-arrow-left"></i></button>
+
+  <div id="joinCommunityOptions">
+    <h2 class="my-4">Choose a category to volunteer in</h2>
+    <!-- Add buttons for categories with individual images -->
+    <div class="container-fluid">
+      <div class="image-container">
+        <div class="volunteer-image" onclick="goToCategory('Conservation')">
+          <img src="Media\JoinComm.jpg" alt="Conservation Image">
+          <p>Conservation</p>
+        </div>
+        <div class="volunteer-image" onclick="goToCategory('Education')">
+          <img src="Media\JoinComm.jpg" alt="Education Image">
+          <p>Education</p>
+        </div>
+        <div class="volunteer-image" onclick="goToCategory('Animal Welfare')">
+          <img src="Media\JoinComm.jpg" alt="Animal Welfare Image">
+          <p>Animal Welfare</p>
+        </div>
+        <div class="volunteer-image" onclick="goToCategory('Community Development')">
+          <img src="Media\JoinComm.jpg" alt="Community Development Image">
+          <p>Community Development</p>
+        </div>
+        <div class="volunteer-image" onclick="goToCategory('Healthcare')">
+          <img src="Media\JoinComm.jpg" alt="Healthcare Image">
+          <p>Healthcare</p>
+        </div>
+        <div class="volunteer-image" onclick="goToCategory('Disaster Relief')">
+          <img src="Media\JoinComm.jpg" alt="Disaster Relief Image">
+          <p>Disaster Relief</p>
+        </div>
+        <div class="volunteer-image" onclick="goToCategory('Social Services')">
+          <img src="Media\JoinComm.jpg" alt="Social Services Image">
+          <p>Social Services</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function goBack() {
+      window.location.href = "volunteer_page.html";
+    }
+
+    function goToCategory(category) {
+      // Handle navigation to the category page
+      console.log("Navigating to " + category);
+    }
+  </script>
+</body>
+</html>

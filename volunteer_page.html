@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eco-Muse Volunteer Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+
+    body {
+      background-color: #25B396;
+      overflow: hidden;
+    }
+
+    .volunteer-heading {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      z-index: 1000;
+    }
+    .volunteer-heading h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add shadow to the heading text */
+    }
+
+
+    .container-fluid {
+  text-align: center; /* Center align contents horizontally */
+}
+
+
+    .image-container {
+  height: calc(100vh - 100px); /* Calculate remaining height of viewport after subtracting the height of the heading */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center; /* Vertically center align the contents */
+  flex-wrap: wrap;
+    }
+     .volunteer-image {
+        display: flex;
+  flex-direction: column;
+  align-items: center;
+      width: 45%;
+      cursor: pointer; /* Add cursor pointer to indicate clickable */
+      transition: transform 0.3s; /* Add transition for smooth effect */
+    }
+    .volunteer-image:hover {
+      transform: scale(1.1); /* Scale up on hover */
+    }
+    .volunteer-image img {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+  object-fit: contain;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Add shadow effect */
+  transition: box-shadow 0.3s; /* Add transition for shadow effect */
+}
+
+.volunteer-image:hover img {
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.6); /* Increase shadow size on hover */
+}
+    .volunteer-image p {
+  /* Add the following properties */
+  margin: 10px 0 0;
+  font-size: 1.2rem;
+}
+
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #192E5B;">
+        <a class="navbar-brand" href="#">Eco-Muse</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Chatroom</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Volunteer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">FAQs</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+      
+      <div class="volunteer-heading">
+        <h1>We make a living by what we get, but we make a life by what we give.</h1>
+      </div>
+      
+    
+      <div class="container-fluid">
+        <div class="image-container">
+          <div class="volunteer-image" onclick="goToJoinPage()">
+            <img src="Media\JoinComm.jpg" alt="Join Comm">
+            <p>Join An Existing Community</p>
+          </div>
+          <div class="volunteer-image" onclick="goToCreatePage()">
+            <img src="Media\BuildComm.jpg" alt="Build Comm">
+            <p>Build A New Community</p>
+          </div>
+        </div>
+      </div>
+    
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function goToJoinPage() {
+      window.location.href = "join_community.html";
+    }
+
+    function goToCreatePage() {
+      window.location.href = "create_community.html";
+    }
+  </script>
+</body>
+</html>
