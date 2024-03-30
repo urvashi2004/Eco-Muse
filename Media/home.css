@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.x {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    overflow: hidden;
+    
+    background: url("1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    width: 1200px;
+    height: auto;
+    max-width: auto;
+    color: #71B139;
+    position: relative;
+    margin-left: 40px;
+}
+  
+.content h1 {
+    font-size: 120px;
+    margin-top: 3%;
+    letter-spacing: 1.2px;
+}
+
+.content p {
+    font-size: 20px;
+    margin-bottom: 5%;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+  
+.btn {
+    width: 200px;
+    height: 50px;
+    background-color: #71B139;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 25px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.btn a{
+    text-decoration: none;
+    color: black;
+    transition: 0.4s ease;
+}
+
+@media screen and (max-width:1200px){
+    .content{
+        width: 100%;
+    }
+    .content h1{
+        font-size: 6.5vw;
+    }
+    .content p{
+        width: 90%;
+        font-size: 2vw;
+    }
+    .btn{
+        width: 20%;
+        height: 3.5vw;
+        font-size: 1.8vw;
+    }
+    .content a{
+        font-size: 1.6vw;
+    }
+}
