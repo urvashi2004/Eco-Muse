@@ -3,14 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Join Community Page</title>
-  <!-- Font Awesome CDN for icons -->
+  <title>Create Community</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
-    /* Add custom styles here */
+
     body {
-      background-color: #25B396;
-      text-align: center; /* Center align all text */
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url('Media/BG.jpg');
+      overflow-x: hidden;
+    }
+
+    .navbar {
+      position: absolute;
+      width: 100%;
+      padding: 15px;
+      left: 0;
+      top: 0;
+      border: none;
     }
 
     .back-button {
@@ -18,134 +30,259 @@
       border: none;
       cursor: pointer;
       font-size: 24px;
-      color: #000;
+      color: #4ca171;
       position: absolute;
       top: 20px;
       left: 20px;
       z-index: 1000;
+      filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.4));
     }
 
     .back-button:hover {
-      filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.4)); /* Apply shadow effect to the icon on hover */
+      filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.4));
     }
 
     h1 {
       text-align: center;
-      font-size: 1.6rem;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add shadow to the heading text */
+      font-size: 1.7rem;
+      color: rgb(52, 173, 131);
+      text-shadow: 2px 2px 4px #00374b;
+      margin: auto;
+      padding: 0 3rem;
     }
 
-    h2 {
-      text-align: center;
-      font-size: 1.3rem;
-      padding-top: 20px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add shadow to the heading text */
+    .container {
+      position: relative;
+      background-color: aliceblue;
+      max-width: 900px;
+      width: 100%;
+      border-radius: 6px;
+      padding: 0 30px 0 30px;
+      margin: 0 15px;
+      margin-top: 15vh;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     }
 
-    .form-container {
-      display: inline-block; /* Align form elements in a block */
-      text-align: left; /* Align text in the form to the left */
-      margin-top: 5%;
-      margin-right: 5%;
-      width: 95%;
-    }
-
-    .input-group {
-      margin-bottom: 20px;
+    .container form {
+      position: relative;
       display: flex;
-      align-items: center; /* Vertically center align text */
+      min-height: 490px;
     }
 
-    label {
-      font-size: 1.2rem;
-      display: inline-block; /* Align labels in a block */
-      width: 50%; /* Set fixed width for labels */
-      text-align: right; /* Right align labels */
-      margin-right: 20px; /* Add margin for spacing */
+    .container form .details {
+      margin-top: 10px;
     }
 
-    input,
-    textarea,
-    select {
-      width: 70%;
-      padding: 15px; /* Increased padding for larger text boxes */
-      border-radius: 10px;
-      border: 1px solid #ccc;
-      font-size: 1rem;
-      display: inline-block; /* Align input fields in a block */
-      vertical-align: middle; /* Vertically center align text boxes */
+    .container form .details.event{
+      margin-top: 10px;
     }
 
-    button[type="submit"] {
-      padding: 15px 30px; /* Increased padding for larger button */
+    .container form .title {
+      display: block;
+      font-weight: 500;
+      font-size: 20px;
+      margin: 6px 0;
+      color: #333;
+    }
+
+    .container form .fields {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+
+    form .fields .input-fields {
+      display: flex;
+      width: calc(100% / 2 - 30px);
+      flex-direction: column;
+      margin:  4px 0;
+    }
+
+    .input-fields label {
+      font-size: 16px;
+      font-weight: 500;
+      color: #2e2e2e;
+    }
+
+    .input-fields input {
+      outline: none;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: 400;
+      padding: 0 15px;
+      height: 42px;
+      margin: 8px 0;
+      color: #333;
+      transition: 0.3s;
+    }
+
+    .input-fields input:is(:focus, :valid) {
+      box-shadow: 5px 3px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .input-fields input[type="date"] {
+      color: #707070;
+    }
+
+    .input-fields input[type="date"] :valid {
+      color: #333;
+    }
+
+    .input-fields select {
+      outline: none;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: 400;
+      padding: 0 15px;
+      height: 42px;
+      margin: 8px 0;
+      color: #333;
+      transition: 0.3s;
+    }
+
+    .input-fields select:is(:focus, :valid) {
+      box-shadow: 5px 3px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .container form button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      justify-self: center;
+      height: 45px;
+      max-width: 200px;
+      width: 100%;
+      font-size: 16px;
+      font-weight: 400;
       border: none;
-      border-radius: 10px;
-      background-color: #192E5B;
-      color: white;
-      font-size: 1rem;
+      outline: none;
+      color: #333;
+      border-radius: 5px;
+      background-color: #4ca171;
+      transition: all 0.3s linear;
       cursor: pointer;
-      transition: background-color 0.3s;
-      display: block; /* Make button a block-level element */
-      margin: 20px auto; /* Center the button horizontally */
+      margin: 15px 35%;
     }
 
-    button[type="submit"]:hover {
-      background-color: #0D3C70;
+    form button:hover{
+      background-color: aliceblue;
     }
 
-    /* Change dropdown button color on hover */
-    select:hover {
-      background-color: #ccc;
+    @media (max-width: 750px) {
+
+      .container form{
+        overflow-y: scroll;
+      }
+
+      .container form::-webkit-scrollbar{
+        display: none;
+      }
+
+      form .fields .input-fields {
+        width: calc(100% / 2 - 15px);
+      }
     }
 
-    .success-message {
-      color: rgb(39, 39, 39);
-      font-size: 1.2rem;
-      margin-top: 20px;
-      display: none; /* Hide the message initially */
+    @media (max-width: 550px) {
+
+      form .fields .input-fields {
+        width: 100%;
+      }
     }
 
   </style>
 </head>
 <body>
-  <h1>Volunteers are not paid — not because they are worthless, but because they are priceless.</h1>
-  <!-- Add content for joining existing communities here -->
-  <button class="back-button" onclick="goBack()"><i class="fas fa-arrow-left"></i></button>
 
-  <div id="joinCommunityOptions">
-    <h2 class="my-4">Fill in the details of the community you wish to create</h2>
-    <!-- Form for entering community details -->
-    <form class="form-container" onsubmit="submitForm(event)">
-      <div class="input-group">
-        <label for="category">Category:</label>
-        <select id="category" name="category" required>
-          <option value="" disabled selected>Select a category</option>
-          <option value="Conservation">Conservation</option>
-          <option value="Education">Education</option>
-          <option value="Animal Welfare">Animal Welfare</option>
-          <option value="Community Development">Community Development</option>
-          <option value="Healthcare">Healthcare</option>
-          <option value="Disaster Relief">Disaster Relief</option>
-          <option value="Social Services">Social Services</option>
-          <option value="Other">Other</option>
-        </select>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #00374b;">
+    <h1>Volunteers are not paid — not because they are worthless, but because they are priceless.</h1>
+    <button class="back-button" onclick="goBack()"><i class="fas fa-arrow-left"></i></button>
+  </nav>
+
+ 
+  <div class="container">
+    <form action="#">
+      <div class="form">
+        <div class="details personal">
+          <span class="title">Personal Details</span>
+          <div class="fields">
+
+            <div class="input-fields">
+              <label>Full Name</label>
+              <input type="text" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="input-fields">
+              <label>Organisation</label>
+              <input type="text" placeholder="Enter name of organisation (if this is a personal project, write NA)" required>
+            </div>
+
+            <div class="input-fields">
+              <label>Contact No.</label>
+              <input type="number" placeholder="Enter valid Contact No." required>
+            </div>
+
+            <div class="input-fields">
+              <label>Mail ID</label>
+              <input type="text" placeholder="Enter valid mail ID" required>
+            </div>
+          
+          </div>
+        </div>
+
+        <div class="details event">
+          <span class="title">Event Details</span>
+          <div class="fields">
+
+            <div class="input-fields">
+              <label>Category</label>
+              <select name="category" id="category" required>
+                <option value="" disabled selected>Select category of event</option>
+                <option value="Conservation">Conservation</option>
+                <option value="Education">Education</option>
+                <option value="Animal Welfare">Animal Welfare</option>
+                <option value="Community Development">Community Development</option>
+                <option value="Healthcare">Healthcare</option>
+                <option value="Disaster Relief">Disaster Relief</option>
+                <option value="Social Services">Social Services</option>
+                <option value="Social Services">Others</option>
+              </select>
+            </div>
+
+            <div class="input-fields">
+              <label>Description</label>
+              <input type="text" placeholder="Enter details of event" required>
+            </div>
+
+            <div class="input-fields">
+              <label>Start Date</label>
+              <input type="date" placeholder="Select the beginning of project" required>
+            </div>
+
+            <div class="input-fields">
+              <label>End Date</label>
+              <input type="date" placeholder="Select the end of project" required>
+            </div>
+
+            <div class="input-fields">
+              <label>Eligibility</label>
+              <input type="text" placeholder="Enter eligibility of volunteers (if not, enter NA)" required>
+            </div>
+
+          </div>
+        </div>
+
+        
+        <button class="SubmitBtn">
+          <span class="btnText">Submit</span>
+        </button>
+
       </div>
-      <div class="input-group">
-        <label for="communityName">Community Name:</label>
-        <input type="text" id="communityName" name="communityName" required>
-      </div>
-      <div class="input-group">
-        <label for="communityDescription">Community Description:</label>
-        <textarea id="communityDescription" name="communityDescription" rows="6" required></textarea>
-      </div>
-      <div class="input-group">
-        <label for="contactEmail">Contact Email:</label>
-        <input type="email" id="contactEmail" name="contactEmail" required>
-      </div>
-      <button type="submit">Submit</button>
     </form>
-    <div id="successMessage" class="success-message">Your community details have been <strong>successfully</strong> submitted!</div>
-</div>
+  </div>
 
   <script>
     function goBack() {
@@ -154,14 +291,6 @@
     
     function submitForm(event) {
       event.preventDefault(); // Prevent form submission
-      // Display success message
-      document.getElementById("successMessage").style.display = "block";
-      // Hide the success message and reset form fields after 3 seconds
-      setTimeout(function() {
-        document.getElementById("successMessage").style.display = "none";
-        document.querySelector("form").reset(); // Reset form fields
-      }, 3000);
-      // Optionally, you can submit the form data to a server using AJAX or other techniques
     }
   </script>
 </body>

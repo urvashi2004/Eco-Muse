@@ -3,77 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eco-Muse Volunteer Page</title>
-  <!-- Bootstrap CSS -->
+  <title>Eco-Muse Volunteers</title>
+
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
 
     body {
-      background-color: #25B396;
+      background-color: #4ca171;
       overflow: hidden;
+      justify-content: center;
+      align-items: center;
+      background-image: url('Media/BG.jpg');
     }
 
     .volunteer-heading {
+      display: flex;
       position: relative;
-      top: 0;
-      left: 0;
-      width: 100%;
-      padding: 20px;
+      top: 40px;
+      margin: auto;
+      width: 80%;
+      padding: 15px;
       text-align: center;
+      justify-content: center;
       z-index: 1000;
+      border-radius: 30px;
+      background-color: #00374b;
     }
+
     .volunteer-heading h1 {
       margin: 0;
-      font-size: 1.5rem;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add shadow to the heading text */
+      font-size: 1.7rem;
+      color: rgb(52, 173, 131);
+      text-shadow: 2px 2px 4px #00374b;
     }
-
 
     .container-fluid {
-  text-align: center; /* Center align contents horizontally */
-}
-
+      margin-top: 7%;
+      text-align: center;
+      background-color: aliceblue;
+      border-radius: 20px;
+      width: 80%;
+      align-items: center;
+    }
 
     .image-container {
-  height: calc(100vh - 100px); /* Calculate remaining height of viewport after subtracting the height of the heading */
-  display: inline-flex;
-  justify-content: center;
-  align-items: center; /* Vertically center align the contents */
-  flex-wrap: wrap;
+      height: calc(100vh - 270px); 
+      display: inline-flex;
+      justify-content: center;
+      align-items: center; 
+      flex-wrap: wrap;
     }
-     .volunteer-image {
-        display: flex;
-  flex-direction: column;
-  align-items: center;
+
+    .volunteer-image {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       width: 45%;
-      cursor: pointer; /* Add cursor pointer to indicate clickable */
-      transition: transform 0.3s; /* Add transition for smooth effect */
+      cursor: pointer; 
+      transition: transform 0.3s; 
     }
+
     .volunteer-image:hover {
-      transform: scale(1.1); /* Scale up on hover */
+      transform: scale(1.1); 
     }
+
     .volunteer-image img {
       width: 100%;
       height: auto;
+      border-radius: 20px;
       max-height: 400px;
-  object-fit: contain;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Add shadow effect */
-  transition: box-shadow 0.3s; /* Add transition for shadow effect */
-}
+      object-fit: contain;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      transition: box-shadow 0.3s;
+    }
 
-.volunteer-image:hover img {
-  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.6); /* Increase shadow size on hover */
-}
+    .volunteer-image:hover img {
+      box-shadow: 0 8px 10px rgba(0, 0, 0, 0.6);
+    }
+
     .volunteer-image p {
-  /* Add the following properties */
-  margin: 10px 0 0;
-  font-size: 1.2rem;
-}
+      margin: 10px 0 0;
+      font-size: 1.2rem;
+      color: #00374b;
+    }
 
   </style>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #192E5B;">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #00374b;">
         <a class="navbar-brand" href="#">Eco-Muse</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -122,7 +140,6 @@
       </div>
     
 
-  <!-- Bootstrap JS (optional) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -135,5 +152,6 @@
       window.location.href = "create_community.html";
     }
   </script>
+
 </body>
 </html>
