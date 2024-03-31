@@ -11,17 +11,17 @@
    
     <header class="header">
         <div class="back" >
-        <i  onclick="barterhome()" class='bx bx-arrow-back' ></i>
+        <i onclick="barterhome()" class='bx bx-arrow-back' ></i>
         </div>
         <div class="logo">
-            <img src="https://opencart.workdo.io/garden/image/catalog/stor-bg.svg" alt="stor-bag">
+            <img onclick="barterhome()" src="https://opencart.workdo.io/garden/image/catalog/stor-bg.svg" alt="stor-bag">
     </div>
     
     <i  id="menu-icon" class='bx bx-menu'></i>
     
   
         <nav class="navbar">
-            <a href="#">Buy Plants</a>
+            <a href="acc.html">Buy Plants</a>
             <a href="#">Wishlist</a>
             <a href="#">More</a>
            
@@ -118,7 +118,11 @@
   
        </section>
   
-       <script src="acc.js"></script>
+       <script>
+        function barterhome(){
+            window.location.assign("shop.html");
+        }
+       </script>
   
 
 </body>

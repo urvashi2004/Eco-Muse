@@ -4,9 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #001b0f;">
+
+        <button class="back-button" onclick="goBack()"><i class="fas fa-arrow-left"></i></button>
+        <a class="navbar-brand" href="../Home">Eco-Muse</a>
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+    
+            <li class="nav-item">
+              <a class="nav-link" href="../Home/homepage.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="../Login/login.html">Login</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Blogs/blog.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Chat/comm.html">Chatroom</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Shop/shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Volunteer/volunteer_page.html">Volunteer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../FAQs/faq.html">FAQs</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+
     <div class="alert-box">msg</div>
 <div class="form">
     <h1 class="heading">login</h1>
@@ -18,5 +61,11 @@
 </div>
 
     <script src="js/form.js"></script>
+
+    <script>
+        function goBack() {
+          window.location.href = "../Home/homepage.html";
+        }
+      </script>
 </body>
 </html>

@@ -19,8 +19,12 @@ nav {
     -webkit-backdrop-filter: blur(5px);
 }
 
+.navbar img {
+    height: 40px;
+}
+
 .x {
-    background-image: url("1.jpg");
+    background-image: url("https://opencart.workdo.io/garden/image/cache/catalog/centerbanner/1-1920x600.jpg");
     background-size: cover;
     display: flex;
     min-height: 50vh;
@@ -32,9 +36,10 @@ nav {
     width: 1200px;
     height: auto;
     max-width: auto;
-    color: #71B139;
+    color: #20553d;
     position: relative;
     margin-left: 40px;
+    box-shadow: #939393;
 }
 
 .content h1 {
@@ -63,7 +68,7 @@ nav {
 
 .btn a{
     text-decoration: none;
-    color: black;
+    color: rgb(146, 146, 146);
     transition: 0.4s ease;
 }
 

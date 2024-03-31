@@ -134,3 +134,41 @@ color:#0af78c
     transition: 1s;
     
 }
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    left: 0;
+    top: 0;
+    border: none;
+  }
+
+  .navbar-brand {
+    padding-left: 50px;
+  }
+
+  nav {
+  background: rgba(225, 225, 225, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  height: 56px;
+}
+
+  .back-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #4ca171;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    z-index: 1000;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.4)); /* Apply shadow effect to the icon on hover */
+  }
+
+  .back-button:hover {
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.4)); /* Apply shadow effect to the icon on hover */
+  }
