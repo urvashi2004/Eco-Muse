@@ -7,7 +7,9 @@
     height: 400px;
     width: 100%;
 }
-
+body{
+    background-color: #001b0f;
+}
 /* Article Filter */
 .article-filter {
     display: flex;
@@ -23,22 +25,27 @@
 }
 
 .active-filter {
-    background: var(--second-color);
+    background: var(--bg2-color);
     color: var(--bg-color);
     padding: 4px 10px;
     border-radius: 5px;
 }
 
 .filter-item {
-    font-size: 1rem;
-    font-weight: 800;
+    font-size: 1.3rem;
+    font-weight: 900;
     cursor: pointer;
 }
 /* Article content */
 .article-content{
-    margin: 0 130px 0 130px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    width: 85%;
+    line-height: 1.567;
 }
 .content{
-   text-align: center;
-   font-size: 2rem;
+   font-size: 1.5rem;
 }
