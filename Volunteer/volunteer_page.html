@@ -109,7 +109,7 @@
         height: auto;
         margin: 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex-direction: row;
     }
 
@@ -187,50 +187,6 @@
 
     .social-icons :hover {
         color: #f18930;
-    }
-
-    .input-field {
-        display: flex;
-        align-self: center;
-        width: max-content;
-        padding: 0 10px;
-    }
-
-    .input-field input {
-      outline: none;
-      border: 1px solid #aaa;
-      border-radius: 5px;
-      font-size: 14px;
-      font-weight: 400;
-      margin: 0 15px;
-      height: 45px;
-      color: #333;
-      transition: 0.3s;
-      text-align: center;
-    }
-
-    .input-field button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      justify-self: center;
-      height: 45px;
-      max-width: 200px;
-      width: 100%;
-      font-size: 16px;
-      font-weight: 400;
-      border: none;
-      outline: none;
-      color: #333;
-      border-radius: 5px;
-      background-color: #4ca171;
-      transition: all 0.3s linear;
-      cursor: pointer;
-      margin: 0 10px;
-    }
-
-    .input-field button:hover {
-      background-color: #fff;
     }
 
     .bottom-bar {
@@ -311,7 +267,15 @@
             <p>Address : B-12, Kashmere Gate, New Delhi</p>
             <p>Email : ecomuse@gmail.com</p>
             <p>Phone : +91 93456 78290</p>
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </ul>
         </div>
+
       
       <div class="footer-content">
         <h3>Quick Links</h3>
@@ -319,33 +283,13 @@
           <li><a href="../Home/homepage.html">Home</a></li>
           <li><a href="../Blogs/blog.html">Blogs</a></li>
           <li><a href="../Chat/chatroom.html">Chat</a></li>
-          <li><a href="../Shop/shop.html"></a></li>
+          <li><a href="../Shop/shop.html">Shop</a></li>
           <li><a href="../Volunteer/volunteer_page.html">Volunteer</a></li>
-          <li><a href="#">FAQ</a></li>
+          <li><a href="../FAQs/faq.html">FAQ</a></li>
         </ul>
       </div>
-      
-      <div class="footer-content">
-        <h3>Follow Us</h3>
-        <ul class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-        </ul>
-        <h3>Subscribe to Newsletter</h3>
-        <div class="input-field">
-            <input type="text" placeholder="Enter valid mail ID" required>
-            <button type="submit">Subscribe</button>
-          </div>
-    
-        </div>
-        </div>
-
-        <div class="bottom-bar">
-            <p>&copy; Eco-Muse. All Rights Reserved.</p>
-        </div>
-    </footer> 
+    </div>
+</footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
