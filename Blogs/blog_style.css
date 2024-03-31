@@ -8,8 +8,13 @@
 }
 
 
-a {
+.article-box a {
     text-decoration: none;
+    color: #1e1e1e;
+}
+
+.article-box p {
+    color: #333;
 }
 
 li {
@@ -152,7 +157,6 @@ nav {
 }
 
 .article-title {
-    color: var(--text-color2);
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 600;
@@ -164,7 +168,6 @@ nav {
 }
 
 .article-description {
-    color: var(--text-color2);
     font-size: 0.9rem;
     font-weight: 900;
     line-height: 1.5rem;
@@ -274,12 +277,12 @@ color: #ff3434;
 font-size: 25px;
 }
 
-a {
+footer a {
 text-decoration: none;
 color: #fff;
 }
 
-a:hover {
+footer a:hover {
 color: #f18930;
 }
 
