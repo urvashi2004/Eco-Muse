@@ -1,7 +1,7 @@
 body {
     justify-content: center;
     align-items: center;
-    background-image: url('Media/BG2.jpg');
+    background-image: url('BG2.jpg');
     font-family: 'Poppins', sans-serif;
   }
 
@@ -89,7 +89,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url(Media/BG.jpg);
+    background-image: url(BG.jpg);
     width: 100%;
     height: 25vh;
     background-size: cover;

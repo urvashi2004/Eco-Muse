@@ -1,9 +1,15 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
-    background-image: url("Media/1.jpg");
     justify-content: center;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-    background-size: cover;
+    background-color: #2c6018;
 }
 
 nav {
@@ -13,6 +19,8 @@ nav {
     }
 
 .x {
+    background-image: url("1.jpg");
+    background-size: cover;
     display: flex;
     min-height: 50vh;
     align-items: center;
@@ -44,7 +52,7 @@ nav {
 .btn {
     width: 200px;
     height: 50px;
-    background-color: #71B139;
+    background-color: #2c6018;
     border: none;
     margin-bottom: 10px;
     font-size: 25px;
@@ -58,12 +66,162 @@ nav {
     transition: 0.4s ease;
 }
 
-.footer {
+.about-us {
+    /* padding: 80px 0px; */
+}
+
+.about-container {
+    margin: 2vh 1.5vw;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+
+.about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-us h3 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.about-us p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: black;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+}
+
+.btn {
+    text-decoration: none;
+    color: antiquewhite;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: black;
+    transition: all 0.4s ease;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family:",sans-serif; */
+  }
+  
+  .testimonials{
+    padding: 40px 0;
+    background: #f1f1f1;
+    color:#fff;
+    text-align: center;
+    background-color: #001b0f;
+  }
+
+  .testimonial:hover{
+    box-shadow: 0 2px 40px rgba(246, 247, 246, 0.192);
+}
+  .inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+  
+  .border{
+    width: 160px;
+    height: 5px;
+    background: #6ab04c;
+    margin: 26px auto;
+  }
+  
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+  }
+  .testimonial{
+    background: #fff;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
-margin-top: 50px;
-height: auto;
+border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .testimonial img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+    color: #fff;
+  }
+  .stars{
+    color: rgb(194, 194, 9);
+    margin-bottom: 20px;
+  }
+  
+  
+  @media screen and (max-width:960px) {
+  .col{
+    flex: 100%;
+    max-width: 80%;
+  }
+  }
+  
+  @media screen and (max-width:600px) {
+  .col{
+    flex: 100%;
+    max-width: 100%;
+  }
+  }
+  
+
+.footer {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    height: auto;
+    background-color: #2d2d2d;
 }
 
 .footer-container {
@@ -78,21 +236,23 @@ flex-direction: row;
 
 .footer-content {
 align-self: center;
+align-items: center;
+justify-content: center;
 width: 30%;
 color: #fff;
 }
 
 .footer-content h3 {
-font-size: 20px;
+font-size: 1rem;
 margin-bottom: 15px;
 text-align: center;
-color: #71B139;
+color: #939393;
 text-shadow: 2px 2px 2px #333;
 }
 
 .footer-content p {
 margin: auto;
-padding: 7px;
+padding: 0.5rem;
 text-align: center;
 }
 
@@ -156,7 +316,7 @@ color: #f18930;
 display: flex;
 align-self: center;
 width: max-content;
-padding: 0 10px;
+padding: 0;
 }
 
 .input-field input {
@@ -165,7 +325,7 @@ border: 1px solid #aaa;
 border-radius: 5px;
 font-size: 14px;
 font-weight: 400;
-margin: 0 15px;
+margin: 0;
 height: 45px;
 color: #333;
 transition: 0.3s;
@@ -184,9 +344,9 @@ font-size: 16px;
 font-weight: 400;
 border: none;
 outline: none;
-color: #333;
+color: #bdbdbd;
 border-radius: 5px;
-background-color: #71B139;
+background-color: #000000;
 transition: all 0.3s linear;
 cursor: pointer;
 margin: 0 10px;
