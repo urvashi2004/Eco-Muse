@@ -37,19 +37,18 @@ z-index: 100;
     width: 25px;}
     
     
-    .navbar a{
+    .navbar2 a{
         color: #fff;
         font-size: 12px;
         text-decoration: none;
-        margin-left: 35px;
         transition: 3s;
     
     }
 
-    .navbar.active{
+    .navbar2.active{
         display: block;
     }
-    .navbar a:hover{
+    .navbar2 a:hover{
     text-decoration:underline;
     }
     
@@ -71,7 +70,7 @@ z-index: 100;
           display: block;
         }
     
-        .navbar{
+        .navbar2{
             position: fixed;
             top:100%;
         left: 0;
@@ -83,7 +82,7 @@ z-index: 100;
         display: none;
         backdrop-filter: blur(10px);
         }
-        .navbar a{
+        .navbar2 a{
             display: block;
             margin: 1.5rem 0;
         }

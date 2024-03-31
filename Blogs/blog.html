@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BLOG</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
     <link rel="stylesheet" href="article.html">
     <link rel="stylesheet" href="blog_style.css">
     <link rel="stylesheet" href="util.css">
@@ -12,41 +16,37 @@
 
 
 <body>
-    <header>
-         <!-- Navigation bar -->
-         <nav class="navbar navbar-expand-lg navbar-light">
+         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #001b0f;">
             <a class="navbar-brand" href="../Home/homepage.html">Eco-Muse</a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
             </button>
-
+          
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="../Home/homepage.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../Blogs/blog.html">Blogs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../Chat/chatroom.html">Chatroom</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../Shop/shop.html">Shop</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="../Volunteer/volunteer_page.html">Volunteer</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../FAQs/faq.html">FAQs</a>
-                    </li>
-                </ul>
+              <ul class="navbar-nav">
+        
+                <li class="nav-item">
+                  <a class="nav-link" href="../Home/homepage.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="../Blogs/blog.html">Blogs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../Chat/comm.html">Chatroom</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../Shop/shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../Volunteer/volunteer_page.html">Volunteer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../FAQs/faq.html">FAQs</a>
+                  </li>
+              </ul>
             </div>
-        </nav>
-    </header>
+          </nav>
     <!-- Main content -->
     <!-- Home : image and text -->
     <section class="home">
@@ -134,56 +134,43 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
+      <div class="footer-invi-box">
         <div class="footer-container">
-
+    
             <div class="footer-content">
                 <h3>Contact Us</h3>
-                <p>Address : 123 Main St, City</p>
-                <p>Email : info@example.com</p>
-                <p>Phone : +123 456 7890</p>
+                <p>Address : B-12, Kashmere Gate, New Delhi</p>
+                <p>Email : ecomuse@gmail.com</p>
+                <p>Phone : +91 93456 78290</p>
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </ul>
             </div>
+
           
           <div class="footer-content">
             <h3>Quick Links</h3>
             <ul class="list">
               <li><a href="../Home/homepage.html">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="../Blogs/blog.html">Blogs</a></li>
+              <li><a href="../Chat/comm.html">Chat</a></li>
+              <li><a href="../Shop/shop.html">Shop</a></li>
+              <li><a href="../Volunteer/volunteer_page.html">Volunteer</a></li>
+              <li><a href="../FAQs/faq.html">FAQ</a></li>
             </ul>
           </div>
-          
-          <div class="footer-content">
-            <h3>Follow Us</h3>
-            <ul class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-            </ul>
-            <h3>Subscribe to Newsletter</h3>
-            <div class="input-field">
-                <input type="text" placeholder="Enter valid mail ID" required>
-              <button type="submit">Subscribe</button>
-            </form>
-          </div>
-
         </div>
-    </footer>  
-    <div class="bottom-bar">
-        <p>&copy; Eco-Muse. All Rights Reserved.</p>
-    </div>
+        <div class="bottom-bar">
+          <p>&copy; Eco-Muse. All Rights Reserved.</p>
+      </div>
+        </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
-    <script>    
-        function submitForm(event) {
-          event.preventDefault();
-        }
-      </script>
+    </footer>
 </body>
 
 </html>

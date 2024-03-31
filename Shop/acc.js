@@ -5,5 +5,5 @@
 // }
 
 function barterhome(){
-    window.location.assign("frontpage.html");
+    window.location.assign("shop.html");
  }
