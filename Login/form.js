@@ -30,7 +30,7 @@ function login(){
     //     alert("invalid login id or password");
     //     return;
     // }
-    window.location.assign("index.html");
+    window.location.assign("../Home/homepage.html");
 }
 
 function register(){
