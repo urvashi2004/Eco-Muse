@@ -7,9 +7,9 @@
 }
 
 body {
+    background-color: #001b0f;
     height: auto;
     width: 100%;
-    background: white;
 }
 
 .strip{

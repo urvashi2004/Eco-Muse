@@ -1,15 +1,16 @@
 body {
+    background-color: #001b0f;
     justify-content: center;
     align-items: center;
-    background-image: url('BG2.jpg');
     font-family: 'Poppins', sans-serif;
   }
 
   nav {
+    background: rgba(225, 225, 225, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-  }
+}
 
   #product1 {
       text-align: center;

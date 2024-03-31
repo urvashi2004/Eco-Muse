@@ -11,6 +11,7 @@
 }
 
 body {
+    background-color: #001b0f;
     font-family: 'Inter', sans-serif;
     color: var(--slate-700);
 }
