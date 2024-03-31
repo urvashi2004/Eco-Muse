@@ -19,6 +19,10 @@ nav {
     -webkit-backdrop-filter: blur(5px);
 }
 
+.navbar img {
+    height: 40px;
+}
+
 .header {
     background-image: url('a.jpeg');
     background-position: top center;

@@ -19,6 +19,10 @@ nav {
     -webkit-backdrop-filter: blur(5px);
 }
 
+.navbar img {
+    height: 40px;
+}
+
 .strip{
     background: black;
     display: flex;

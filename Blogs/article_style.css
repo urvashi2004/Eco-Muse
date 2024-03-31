@@ -24,6 +24,10 @@
   height: 56px;
 }
 
+.navbar img {
+  height: 40px;
+}
+
 .back-button {
     background: none;
     border: none;

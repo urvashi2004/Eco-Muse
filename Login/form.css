@@ -156,6 +156,10 @@ color:#0af78c
   height: 56px;
 }
 
+.navbar img {
+    height: 40px;
+}
+
   .back-button {
     background: none;
     border: none;

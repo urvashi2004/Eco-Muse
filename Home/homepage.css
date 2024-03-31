@@ -24,8 +24,10 @@ nav {
 }
 
 .x {
-    background-image: url("https://opencart.workdo.io/garden/image/cache/catalog/centerbanner/1-1920x600.jpg");
+    background-image: url("3.jpeg");
     background-size: cover;
+    background-position: center;
+    opacity: 0.7;
     display: flex;
     min-height: 50vh;
     align-items: center;
@@ -36,7 +38,7 @@ nav {
     width: 1200px;
     height: auto;
     max-width: auto;
-    color: #20553d;
+    color: white;
     position: relative;
     margin-left: 40px;
     box-shadow: #939393;
@@ -44,32 +46,17 @@ nav {
 
 .content h1 {
     font-size: 120px;
+    font-weight: 800;
     margin-top: 3%;
     letter-spacing: 1.2px;
 }
 
 .content p {
     font-size: 20px;
+    font-weight: 400;
     margin-bottom: 5%;
     letter-spacing: 1.2px;
     line-height: 30px;
-}
-
-.btn {
-    width: 200px;
-    height: 50px;
-    background-color: #2c6018;
-    border: none;
-    margin-bottom: 10px;
-    font-size: 25px;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-.btn a{
-    text-decoration: none;
-    color: rgb(146, 146, 146);
-    transition: 0.4s ease;
 }
 
 .about-us {
