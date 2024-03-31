@@ -6,6 +6,7 @@
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
 }
+
 body {
     background-color: #001b0f;
 }
@@ -97,7 +98,8 @@ nav {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 0;
+    max-width: 100vw;
 }
 
 .active-filter {
@@ -209,104 +211,104 @@ nav {
 }
 
 .footer-container {
-padding-top: 20px;
-width: 100%;
-height: auto;
-margin: 0;
-display: flex;
-justify-content: space-evenly;
-flex-direction: row;
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
 }
 
 .footer-content {
-align-self: center;
-align-items: center;
-justify-content: center;
-width: 50%;
-color: #fff;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    color: #fff;
 }
 
 .footer-content h3 {
-font-size: 1rem;
-margin-bottom: 15px;
-text-align: center;
-color: #939393;
-text-shadow: 2px 2px 2px #333;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #939393;
+    text-shadow: 2px 2px 2px #333;
 }
 
 .footer-content p {
-margin: auto;
-padding: 0.5rem;
-text-align: center;
+    margin: auto;
+    padding: 0.5rem;
+    text-align: center;
 }
 
 .footer-content ul {
-text-align: center;
+    text-align: center;
 }
 
 .list {
-padding: 0;
+    padding: 0;
 }
 
 .list li {
-width: auto;
-text-align: center;
-list-style-type: none;
-padding: 7px;
-position: relative;
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
 }
 
 .list li::before {
-content: '';
-position: absolute;
-transform: translate(-50%, -50%);
-left: 50%;
-top: 100%;
-width: 0;
-height: 2px;
-background: #f18930;
-transition-duration: 0.5s;
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #f18930;
+    transition-duration: 0.5s;
 }
 
 .list li:hover::before {
-width: 70px;
+    width: 70px;
 }
 
 .social-icons {
-text-align: center;
-padding: 0;
-padding-bottom: 30px;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 30px;
 }
 
 .social-icons  li {
-color: #ff3434;
-font-size: 25px;
+    color: #ff3434;
+    font-size: 25px;
 }
 
 footer a {
-text-decoration: none;
-color: #fff;
+    text-decoration: none;
+    color: #fff;
 }
 
 footer a:hover {
-color: #f18930;
+    color: #f18930;
 }
 
 .social-icons :hover {
-color: #f18930;
+    color: #f18930;
 }
 
 .bottom-bar {
-text-align: center;
-padding: 10px 0;
-width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
 }
 
 .bottom-bar p {
-color: #e3e3e3;
-margin: 0;
-font-size: 16px;
-padding: 7px;
+    color: #e3e3e3;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
 }
 
 /* setting break points */
