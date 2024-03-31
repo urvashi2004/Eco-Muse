@@ -78,7 +78,6 @@ body{
 /* Article content */
 .article-content{
     color: white;
-    display: flex;
     justify-content: center;
     align-content: center;
     margin: auto;
